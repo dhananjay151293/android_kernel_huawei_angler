@@ -43,6 +43,11 @@
 			qcom,memblock-reserve = <0x1fe00000 0x00200000>;
 		};
 	};
+	
+	kexec_hardboot-hole {
+		compatible = "qcom,msm-contig-mem";
+		qcom,memblock-reserve = <0x1fe00000 0x002000>;
+	};
 
 	qcom,mpm@fc4281d0 {
 		qcom,gic-map = <2 216>, /* tsens_upper_lower_int */
